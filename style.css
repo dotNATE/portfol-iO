@@ -21,7 +21,7 @@ html {
 	font-size: 16px;
 }
 
-h1 {
+h2 {
 	font-size: 3rem;
 }
 
@@ -114,6 +114,7 @@ main {
 		"header header"
 		"question answer"
 		"skills-question skills-answer";
+	column-gap: 10px;
 }
 
 .about-header {
@@ -121,8 +122,15 @@ main {
 	text-align: center;
 }
 
+.about-header::after {
+	content: '.';
+	color: #000000;
+}
+
 .about-questions, 
 .questions-skills {
 	text-align: right;
 	color: #000000;
 }
+
+/* contact rules */
