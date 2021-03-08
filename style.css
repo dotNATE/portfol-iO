@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* current red in use for theme is #F52319 */
+
 *,
 *::before,
 *::after {
 	box-sizing:border-box;
 	padding: 0;
 	margin: 0;
+	font-family: 'roboto', sans-serif;
+}
+
+*:focus {
+	outline: 0;
 }
 
 /* global rules */
@@ -11,15 +20,22 @@
 /* nav rules */
 
 nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	font-size: 1.3rem;
 	height: 10vh;
-	border-bottom: 1px solid #F52319;
+	border-bottom: 1vh solid #F52319;
+	z-index: 100;
 }
 
 .nav-content {
-	width: 30%;
+	position: relative;
+	left: 2vh;
+	width: 40%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -28,6 +44,27 @@ nav {
 	margin: 0 1rem;
 }
 
+.nav-logo::before,
+.nav-logo::after {
+	color: #F52319;
+}
+
+.nav-logo::before {
+	content: '<';
+}
+
+.nav-logo::after {
+	content: '>';
+}
+
 .nav-link {
-	
+	text-decoration: none;
+	color: #000000;
+	transition: ease 250ms;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: #F52319;
+	transform: scale(1.2);
 }
