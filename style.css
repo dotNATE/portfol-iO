@@ -140,7 +140,7 @@ main {
 /* projects rules */
 
 #projects {
-	height: 90vh;
+	min-height: 90vh;
 	width:100%;
 	background-color: #FFFFFF;
 	padding: 5%;
@@ -149,7 +149,6 @@ main {
 .projects-gallery {
 	display: flex;
 	flex-direction: column;
-	padding: 2.5%;
 }
 
 .projects-header {
@@ -167,7 +166,7 @@ main {
 .project-container {
 	display: grid;
 	grid-template-columns: 1fr 1.5fr;
-	grid-template-rows: 5vh repeat(3, 1fr);
+	grid-template-rows: auto repeat(3, 1fr);
 	grid-template-areas:
 		"img header"
 		"img content1"
@@ -217,8 +216,13 @@ main {
 .project-skills-icons {
 	grid-area: skills;
 	position: relative;
-		top: 4vh;
 		left: 2vh;
 }
 
 /* contact rules */
+#contact {
+	height: 50vh;
+	width: 100%;
+	background-color: #F52319;
+	color: #FFFFFF;
+}
