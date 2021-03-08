@@ -17,6 +17,10 @@
 
 /* global rules */
 
+html {
+	font-size: 16px;
+}
+
 /* nav rules */
 
 nav {
