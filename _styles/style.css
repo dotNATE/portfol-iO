@@ -104,17 +104,16 @@ main {
 	max-height: 50vh;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(2, 1fr) 0.5fr repeat(2, 1fr);
 	grid-template-rows: repeat(5, 1fr);
 	grid-template-areas:
-		". . . . ."
+		". img . . ."
 		". img header header ."
-		". img content content ."
-		". img skills skills ."
-		". . . . .";
+		". img questions answers ."
+		". img squestion skills skills"
+		". . . skills skills";
 	column-gap: 20px;
 	font-size: 1.4rem;
-	border: 1px solid white;
 }
 
 .main-img {
@@ -130,13 +129,25 @@ main {
 	grid-area: header;
 }
 
-.about-info {
-	grid-area: content;
+.about-questions {
+	grid-area: questions;
+	color: #000000;
+	text-align: right;
+}
+
+.questions-skills {
+	text-align: right;
+	margin-top: 1rem;
+	color: #000000;
+	grid-area: squestion;
+}
+
+.about-answers {
+	grid-area: answers;
 }
 
 .skills-container {
 	grid-area: skills;
-	color: #000000;
 }
 
 .about-header::after {
