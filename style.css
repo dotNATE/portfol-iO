@@ -25,6 +25,10 @@ h2 {
 	font-size: 3rem;
 }
 
+h3 {
+	font-size: 2rem;
+}
+
 /* nav rules */
 
 nav {
@@ -69,13 +73,13 @@ nav {
 .nav-link {
 	text-decoration: none;
 	color: #000000;
-	transition: ease 250ms;
 }
 
 .nav-link:hover,
 .nav-link:focus {
 	color: #F52319;
 	transform: scale(1.2);
+	transition: ease 250ms;
 }
 
 /* main rules */
@@ -133,4 +137,92 @@ main {
 	color: #000000;
 }
 
+/* projects rules */
+
+#projects {
+	min-height: 90vh;
+	width:100%;
+	background-color: #FFFFFF;
+	padding: 5%;
+}
+
+.projects-gallery {
+	display: flex;
+	flex-direction: column;
+}
+
+.projects-header {
+	text-align: center;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #F52319;
+}
+
+.projects-header::after,
+.project-container-heading::after {
+	content: '.';
+	color: #F52319;
+}
+
+.project-container {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	grid-template-rows: auto repeat(3, 1fr);
+	grid-template-areas:
+		"img header"
+		"img content1"
+		"img content2"
+		"img skills";
+	column-gap: 20px;
+	row-gap: 10px;
+	padding: 25px 0;
+	border-bottom: 1px solid #F52319;
+}
+
+.project-img {
+	height: auto;
+	max-width: 500px;
+	grid-area: img;
+	padding: 2.5%;
+}
+
+.project-container-heading {
+	margin-top: 1vh;
+	grid-area: header;
+}
+
+.project-info-subtitle {
+	font-size: 1.4rem;
+	grid-area: content1;
+}
+
+.project-info-subtitle::after,
+.project-skills-subtitle::after {
+	content: ':';
+	color: #F52319;
+}
+
+.project-info {
+	grid-area: content1;
+	position: relative;
+		top: 4vh;
+		left: 2vh;
+}
+
+.project-skills-subtitle {
+	font-size: 1.4rem;
+	grid-area: content2;
+}
+
+.project-skills-icons {
+	grid-area: skills;
+	position: relative;
+		left: 2vh;
+}
+
 /* contact rules */
+#contact {
+	height: 50vh;
+	width: 100%;
+	background-color: #F52319;
+	color: #FFFFFF;
+}
