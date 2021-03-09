@@ -183,7 +183,7 @@ main {
 	max-width: 32%;
 	min-width: 420px;
 	display: grid;
-	grid-template-rows: 2fr 1fr 1fr;
+	grid-template-rows: 1fr auto 100px;
 	padding: 10px;
 	border-radius: 25px;
 	transition: ease 250ms;
@@ -197,7 +197,6 @@ main {
 
 .project-img {
 	height: auto;
-	min-width: 180px;
 	max-width: 400px;
 	border-radius: 25px;
 	margin: 0 auto;
@@ -273,6 +272,10 @@ main {
 }
 
 @media only screen and (max-width: 1400px) {
+	main {
+		padding-bottom: 2vh;
+	}
+	
 	.main-content {
 		grid-template-columns: 2fr 1fr 2fr;
 		grid-template-rows: repeat(5, 1fr);
@@ -287,7 +290,40 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
+	main {
+		min-height: 100vh;
+		height: 700px;
+	}
+	
 	.nav-content {
 		width: 80%;
+	}
+	
+	.icon {
+		width: 32.5px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 725px) {
+	.main-img {
+		height: 240.5px;
+	}
+}
+
+@media only screen and (max-width: 539px) {
+	.contact-header,
+	.about-questions,
+	.questions-skills {
+		display: none;
+	}
+	
+	.project-container {
+		min-width: 260px;
+	}
+	
+	.project-img {
+		height: auto;
+		width: 300px;
 	}
 }
