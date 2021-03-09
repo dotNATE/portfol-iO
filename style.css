@@ -251,18 +251,15 @@ main {
 	color: #FFFFFF;
 }
 
+.email-address,
+.contact-icon {
+	transition: ease 250ms;
+}
+
 .email-address:hover,
 .email-address:focus {
 	color: #000000;
 	transform: scale(1.2);
-}
-
-.email-address {
-	transition: ease 250ms;
-}
-
-.contact-icon {
-	transition: ease 250ms;
 }
 
 .contact-icon:hover,
