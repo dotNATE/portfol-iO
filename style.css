@@ -230,4 +230,17 @@ main {
 	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-header {
+	margin: 5vh 0 3vh 0;
+}
+
+.contact-header::after {
+	content: '.';
+	color: #000000;
 }
