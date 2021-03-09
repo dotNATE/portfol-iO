@@ -52,7 +52,7 @@ nav {
 
 .nav-content {
 	position: relative;
-	left: 2vh;
+	left: 2vw;
 	width: 40%;
 	display: flex;
 	justify-content: space-between;
@@ -146,7 +146,7 @@ main {
 
 #projects {
 	min-height: 90vh;
-	width:100%;
+	width: auto;
 	background-color: #FFFFFF;
 	padding: 2.5%;
 }
@@ -164,15 +164,18 @@ main {
 .project-gallery {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .project-container {
-	max-width: 29%;
+	max-width: 32%;
+	min-width: 420px;
 	display: grid;
 	grid-template-rows: 2fr 1fr 1fr;
 	padding: 10px;
 	border-radius: 25px;
 	transition: ease 250ms;
+	justify-content:center;
 }
 
 .project-container:hover,
@@ -182,19 +185,24 @@ main {
 
 .project-img {
 	height: auto;
-	max-width: 500px;
+	min-width: 180px;
+	max-width: 400px;
 	border-radius: 25px;
+	margin: 0 auto;
 }
 
 .project-info {
 	width: 90%;
+	max-width: 400px;
 	padding-top: 2rem;
 	align-text: center;
 	font-size: 1.3rem;
 }
 
 .project-icons {
-	width: 100;
+	margin-top: 1.5vh;
+	width: 100%;
+	max-width: 400px;
 	opacity: .8;
 }
 
