@@ -142,86 +142,60 @@ main {
 	color: #000000;
 }
 
-/* projects rules */
+/* legacy projects rules */
 
 #projects {
 	min-height: 90vh;
 	width:100%;
 	background-color: #FFFFFF;
-	padding: 5%;
-}
-
-.projects-gallery {
-	display: flex;
-	flex-direction: column;
+	padding: 2.5%;
 }
 
 .projects-header {
 	text-align: center;
 	padding-bottom: 50px;
-	border-bottom: 1px solid #F52319;
 }
 
-.projects-header::after,
-.project-container-heading::after {
+.projects-header::after {
 	content: '.';
 	color: #F52319;
 }
 
+.project-gallery {
+	display: flex;
+	justify-content: space-around;
+}
+
 .project-container {
+	max-width: 29%;
 	display: grid;
-	grid-template-columns: 1fr 1.5fr;
-	grid-template-rows: auto repeat(3, 1fr);
-	grid-template-areas:
-		"img header"
-		"img content1"
-		"img content2"
-		"img skills";
-	column-gap: 20px;
-	row-gap: 10px;
-	padding: 25px 0;
-	border-bottom: 1px solid #F52319;
+	grid-template-rows: 2fr 1fr 1fr;
+	padding: 10px;
+	border-radius: 5%;
+	transition: ease 250ms;
+}
+
+.project-container:hover,
+.project-container:focus {
+	background-color: rgba(0,0,0,.3);
 }
 
 .project-img {
 	height: auto;
 	max-width: 500px;
-	grid-area: img;
-	padding: 2.5%;
-}
-
-.project-container-heading {
-	margin-top: 1vh;
-	grid-area: header;
-}
-
-.project-info-subtitle {
-	font-size: 1.4rem;
-	grid-area: content1;
-}
-
-.project-info-subtitle::after,
-.project-skills-subtitle::after {
-	content: ':';
-	color: #F52319;
+	border-radius: 5%;
 }
 
 .project-info {
-	grid-area: content1;
-	position: relative;
-		top: 4vh;
-		left: 2vh;
+	width: 90%;
+	padding-top: 2rem;
+	align-text: center;
+	font-size: 1.3rem;
 }
 
-.project-skills-subtitle {
-	font-size: 1.4rem;
-	grid-area: content2;
-}
-
-.project-skills-icons {
-	grid-area: skills;
-	position: relative;
-		left: 2vh;
+.project-icons {
+	width: 100;
+	opacity: .8;
 }
 
 /* contact rules */
@@ -262,14 +236,18 @@ main {
 	transform: scale(1.2);
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
-	transform: scale(1.2);
-	filter: brightness(0%);
-}
-
 .contact-icons {
 	display: flex;
 	width: 10vw;
 	justify-content: space-around;
+}
+ 
+.contact-icon:hover {
+	transform: scale(1.2);
+	filter: brightness(0%);
+}
+ 
+.icon-link:focus .contact-icon {
+	transform: scale(1.2);
+	filter: brightness(0%);
 }
