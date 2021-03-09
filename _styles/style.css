@@ -94,7 +94,6 @@ main {
 	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
-	padding-top: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -273,6 +272,22 @@ main {
 	filter: brightness(0%);
 }
 
-@media only screen and (max-width: 1375px) {
-	
+@media only screen and (max-width: 1400px) {
+	.main-content {
+		grid-template-columns: 2fr 1fr 2fr;
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-areas:
+			". img ."
+			". header ."
+			"questions answers ."
+			"squestion skills ."
+			". skills .";
+		row-gap: 1vh;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.nav-content {
+		width: 80%;
+	}
 }
