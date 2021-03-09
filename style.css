@@ -148,13 +148,12 @@ main {
 	min-height: 90vh;
 	width:100%;
 	background-color: #FFFFFF;
-	padding: 5%;
+	padding: 2.5%;
 }
 
 .projects-header {
 	text-align: center;
 	padding-bottom: 50px;
-	border-bottom: 1px solid #F52319;
 }
 
 .projects-header::after {
@@ -162,23 +161,36 @@ main {
 	color: #F52319;
 }
 
-.project-container {
-	max-width: 31%;
+.project-gallery {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: space-around;
+}
+
+.project-container {
+	max-width: 29%;
+	display: grid;
+	grid-template-rows: 2fr 1fr 1fr;
 	padding: 10px;
+	border-radius: 5%;
+	transition: ease 250ms;
+}
+
+.project-container:hover,
+.project-container:focus {
+	background-color: rgba(0,0,0,.3);
 }
 
 .project-img {
 	height: auto;
 	max-width: 500px;
-	margin-bottom: 10px;
+	border-radius: 5%;
 }
 
 .project-info {
 	width: 90%;
-	margin-bottom: 10px;
+	padding-top: 2rem;
+	align-text: center;
+	font-size: 1.3rem;
 }
 
 .project-icons {
