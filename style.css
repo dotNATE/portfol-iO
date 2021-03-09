@@ -29,6 +29,11 @@ h3 {
 	font-size: 2rem;
 }
 
+.icon {
+	width: 75px;
+	height: 75px;
+}
+
 /* nav rules */
 
 nav {
