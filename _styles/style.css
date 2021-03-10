@@ -38,8 +38,6 @@ h3 {
 
 nav {
 	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -119,9 +117,7 @@ main {
 	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding-top: 17.5rem;
 }
 
 .main-content {
@@ -182,9 +178,12 @@ main {
 /* projects rules */
 
 #projects {
+	position: absolute;
+	bottom: 5rem;
+}
+
+.projects {
 	min-height: 60rem;
-	width: auto;
-	background-color: #FFFFFF;
 	padding: 2.5%;
 }
 
@@ -238,7 +237,6 @@ main {
 
 .project-icons {
 	margin-top: 1rem;
-	width: 100%;
 	max-width: 400px;
 	opacity: .8;
 }
@@ -246,7 +244,6 @@ main {
 /* contact rules */
 #contact {
 	height: 20rem;
-	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
 	display: flex;
