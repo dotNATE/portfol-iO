@@ -44,9 +44,9 @@ nav {
 	display: flex;
 	align-items: center;
 	font-size: 1.3rem;
-	height: 10vh;
+	height: 7.5rem;
 	background-color: #FFFFFF;
-	border-bottom: 1vh solid #F52319;
+	border-bottom: 0.75rem solid #F52319;
 	z-index: 100;
 }
 
@@ -90,7 +90,7 @@ nav {
 /* main rules */
 
 main {
-	height: 100vh;
+	height: 65rem;
 	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
@@ -100,7 +100,7 @@ main {
 }
 
 .main-content {
-	max-height: 50vh;
+	max-height: 35rem;
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr) 0.5fr repeat(2, 1fr);
@@ -118,10 +118,10 @@ main {
 .main-img {
 	max-height: 481px;
 	width: auto;
-	border: 1vh solid #FFFFFF;
+	border: 0.75rem solid #FFFFFF;
 	border-radius: 50%;
-	flex-shrink: 1;
 	grid-area: img;
+	background-color: #FFFFFF;
 }
 
 .about-header {
@@ -157,7 +157,7 @@ main {
 /* projects rules */
 
 #projects {
-	min-height: 90vh;
+	min-height: 60rem;
 	width: auto;
 	background-color: #FFFFFF;
 	padding: 2.5%;
@@ -211,7 +211,7 @@ main {
 }
 
 .project-icons {
-	margin-top: 1.5vh;
+	margin-top: 1rem;
 	width: 100%;
 	max-width: 400px;
 	opacity: .8;
@@ -219,7 +219,7 @@ main {
 
 /* contact rules */
 #contact {
-	height: 50vh;
+	height: 30rem;
 	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
@@ -230,7 +230,7 @@ main {
 }
 
 .contact-header {
-	margin: 5vh 0 3vh 0;
+	margin: 3.5rem 0 2rem 0;
 }
 
 .contact-header::after {
@@ -271,11 +271,7 @@ main {
 	filter: brightness(0%);
 }
 
-@media only screen and (max-width: 1400px) {
-	main {
-		padding-bottom: 2vh;
-	}
-	
+@media only screen and (max-width: 1400px) {	
 	.main-content {
 		grid-template-columns: 2fr 1fr 2fr;
 		grid-template-rows: repeat(5, 1fr);
@@ -285,14 +281,18 @@ main {
 			"questions answers ."
 			"squestion skills ."
 			". skills .";
-		row-gap: 1vh;
+		row-gap: 1rem;
 	}
 }
 
 @media only screen and (max-width: 900px) {
 	main {
-		min-height: 100vh;
-		height: 700px;
+		height: 45rem;
+		padding-top: 25%;
+	}
+	
+	.main-img {
+		height: 240.5px;
 	}
 	
 	.nav-content {
@@ -305,17 +305,11 @@ main {
 	}
 }
 
-@media only screen and (max-width: 725px) {
-	.main-img {
-		height: 240.5px;
-	}
-}
-
 @media only screen and (max-width: 539px) {
 	.contact-header,
 	.about-questions,
 	.questions-skills {
-		display: none;
+		font-size: .75rem;
 	}
 	
 	.project-container {
