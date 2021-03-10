@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Russo+One&display=swap');
+
+.challenge-space {
+	border: 0.75rem solid #F52319;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.shield {
+	height: 300px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	clip-path: polygon(100% 0, 90% 85%, 50% 100%, 10% 85%, 0 0);
+}
+
+.half-shield {
+	height: 90%;
+	width: 90%;
+	clip-path: polygon(50% 0, 100% 0, 90% 85%, 50% 100%);
+}
+
+h1 {
+	color: white;
+	font-size: 17.5rem;
+	position: absolute;
+}
+
+h2 {
+	color: #000000;
+	font-size: 5rem;
+	position: relative;
+	top: .5rem;
+}
+
+.html5 {
+	background-color: #e34c26;
+}
+
+.html5-highlight {
+	background-color: #f06529;
+}
+
+.css3 {
+	background-color: #264de4;
+}
+
+.css3-highlight {
+	background-color: #2965f1;
+}
