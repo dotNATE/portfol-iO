@@ -108,8 +108,8 @@ main {
 	grid-template-areas:
 		". img . . ."
 		". img header header ."
-		". img questions answers ."
-		". img squestion skills skills"
+		". img questions1 answers ."
+		". img questions2 skills skills"
 		". . . skills skills";
 	column-gap: 20px;
 	font-size: 1.4rem;
@@ -129,7 +129,7 @@ main {
 }
 
 .about-questions {
-	grid-area: questions;
+	grid-area: questions1;
 	color: #000000;
 	text-align: right;
 }
@@ -138,7 +138,7 @@ main {
 	text-align: right;
 	margin-top: 1rem;
 	color: #000000;
-	grid-area: squestion;
+	grid-area: questions2;
 }
 
 .about-answers {
@@ -278,8 +278,8 @@ main {
 		grid-template-areas:
 			". img ."
 			". header ."
-			"questions answers ."
-			"squestion skills ."
+			"questions1 answers ."
+			"questions2 skills ."
 			". skills .";
 		row-gap: 1rem;
 	}
