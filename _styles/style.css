@@ -38,8 +38,6 @@ h3 {
 
 nav {
 	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -56,10 +54,6 @@ nav {
 	width: 40%;
 	display: flex;
 	justify-content: space-between;
-}
-
-.nav-logo {
-	margin: 0 1rem;
 }
 
 .nav-logo::before,
@@ -87,6 +81,35 @@ nav {
 	transition: ease 250ms;
 }
 
+.home-link {
+	text-decoration: none;
+	color: #000000;
+	margin: 0 1rem;
+}
+
+.home-link:hover,
+.home-link:focus {
+	color: #F52319;
+	transform: scale(1.2);
+	transition: ease 250ms;
+}
+
+.home-link:hover .nav-logo::before {
+	color: #000000;
+}
+
+.home-link:focus .nav-logo::before {
+	color: #000000;
+}
+
+.home-link:hover .nav-logo::after {
+	color: #000000;
+}
+
+.home-link:focus .nav-logo::after {
+	color: #000000;
+}
+
 /* main rules */
 
 main {
@@ -94,9 +117,7 @@ main {
 	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding-top: 17.5rem;
 }
 
 .main-content {
@@ -157,9 +178,12 @@ main {
 /* projects rules */
 
 #projects {
+	position: absolute;
+	bottom: 5rem;
+}
+
+.projects {
 	min-height: 60rem;
-	width: auto;
-	background-color: #FFFFFF;
 	padding: 2.5%;
 }
 
@@ -206,13 +230,13 @@ main {
 	width: 90%;
 	max-width: 400px;
 	padding-top: 2rem;
-	align-text: center;
+	margin: 0 auto;
+	text-align: center;
 	font-size: 1.3rem;
 }
 
 .project-icons {
 	margin-top: 1rem;
-	width: 100%;
 	max-width: 400px;
 	opacity: .8;
 }
@@ -220,7 +244,6 @@ main {
 /* contact rules */
 #contact {
 	height: 20rem;
-	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
 	display: flex;
