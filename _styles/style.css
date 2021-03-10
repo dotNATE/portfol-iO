@@ -58,10 +58,6 @@ nav {
 	justify-content: space-between;
 }
 
-.nav-logo {
-	margin: 0 1rem;
-}
-
 .nav-logo::before,
 .nav-logo::after {
 	color: #F52319;
@@ -85,6 +81,35 @@ nav {
 	color: #F52319;
 	transform: scale(1.2);
 	transition: ease 250ms;
+}
+
+.home-link {
+	text-decoration: none;
+	color: #000000;
+	margin: 0 1rem;
+}
+
+.home-link:hover,
+.home-link:focus {
+	color: #F52319;
+	transform: scale(1.2);
+	transition: ease 250ms;
+}
+
+.home-link:hover .nav-logo::before {
+	color: #000000;
+}
+
+.home-link:focus .nav-logo::before {
+	color: #000000;
+}
+
+.home-link:hover .nav-logo::after {
+	color: #000000;
+}
+
+.home-link:focus .nav-logo::after {
+	color: #000000;
 }
 
 /* main rules */
