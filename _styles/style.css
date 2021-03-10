@@ -206,7 +206,8 @@ main {
 	width: 90%;
 	max-width: 400px;
 	padding-top: 2rem;
-	align-text: center;
+	margin: 0 auto;
+	text-align: center;
 	font-size: 1.3rem;
 }
 
