@@ -120,7 +120,7 @@ main {
 	grid-template-rows: repeat(5, 1fr);
 	grid-template-areas:
 		". img . . ."
-		". img header header ."
+		". img . header ."
 		". img questions1 answers ."
 		". img questions2 skills skills"
 		". . . skills skills";
