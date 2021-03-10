@@ -94,20 +94,12 @@ nav {
 	transition: ease 250ms;
 }
 
-.home-link:hover .nav-logo::before {
-	color: #000000;
-}
-
-.home-link:focus .nav-logo::before {
-	color: #000000;
-}
-
-.home-link:hover .nav-logo::after {
-	color: #000000;
-}
-
+.home-link:hover .nav-logo::before,
+.home-link:focus .nav-logo::before,
+.home-link:hover .nav-logo::after,
 .home-link:focus .nav-logo::after {
 	color: #000000;
+	transition: ease 250ms;
 }
 
 /* main rules */
