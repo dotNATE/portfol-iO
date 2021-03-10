@@ -109,7 +109,7 @@ main {
 	width: 100%;
 	background-color: #F52319;
 	color: #FFFFFF;
-	padding-top: 17.5rem;
+	padding-top: 12.5rem;
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 }
 
@@ -170,9 +170,11 @@ main {
 
 /* projects rules */
 
-#projects {
-	position: absolute;
-	bottom: 5rem;
+.anchor {
+	display: block;
+	  height: 7.5rem; 
+	  margin-top: -7.5rem; 
+	  visibility: hidden;
 }
 
 .projects {
