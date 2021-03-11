@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* current red in use for theme is #F52319 */
+/* current red in use for theme is #D61F15, previous was #F52319
+   current 'white' is #F9F9F9 */
 
 *,
 *::before,
@@ -20,7 +21,7 @@
 html {
 	font-size: 16px;
 	scroll-behavior: smooth;
-	background-color: rgba(0, 0, 0, 0.005);
+	background-color: #F9F9F9;
 }
 
 h2 {
@@ -45,8 +46,8 @@ nav {
 	align-items: center;
 	font-size: 1.3rem;
 	height: 7.5rem;
-	background-color: #FFFFFF;
-	border-bottom: 0.75rem solid #F52319;
+	background-color: #F9F9F9;
+	border-bottom: 0.75rem solid #D61F15;
 	z-index: 100;
 }
 
@@ -60,7 +61,7 @@ nav {
 
 .nav-logo::before,
 .nav-logo::after {
-	color: #F52319;
+	color: #D61F15;
 }
 
 .nav-logo::before {
@@ -78,7 +79,7 @@ nav {
 
 .nav-link:hover,
 .nav-link:focus {
-	color: #F52319;
+	color: #D61F15;
 	transform: scale(1.2);
 	transition: ease 250ms;
 }
@@ -91,7 +92,7 @@ nav {
 
 .home-link:hover,
 .home-link:focus {
-	color: #F52319;
+	color: #D61F15;
 	transform: scale(1.2);
 	transition: ease 250ms;
 }
@@ -109,8 +110,8 @@ nav {
 main {
 	height: 67.5rem;
 	width: 100%;
-	background-color: #F52319;
-	color: #FFFFFF;
+	background-color: #D61F15;
+	color: #F9F9F9;
 	padding-top: 12.5rem;
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 }
@@ -134,10 +135,10 @@ main {
 .main-img {
 	max-height: 481px;
 	width: auto;
-	border: 0.75rem solid #FFFFFF;
+	border: 0.75rem solid #F9F9F9;
 	border-radius: 50%;
 	grid-area: img;
-	background-color: #FFFFFF;
+	background-color: #F9F9F9;
 }
 
 .about-header {
@@ -191,7 +192,7 @@ main {
 
 .projects-header::after {
 	content: '.';
-	color: #F52319;
+	color: #D61F15;
 }
 
 .project-gallery {
@@ -211,7 +212,7 @@ main {
 	transition: ease 250ms;
 	justify-content: center;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-	background-color: #FFFFFF;
+	background-color: #F9F9F9;
 }
 
 .project-container:hover,
@@ -245,8 +246,8 @@ main {
 /* contact rules */
 #contact {
 	height: 20rem;
-	background-color: #F52319;
-	color: #FFFFFF;
+	background-color: #D61F15;
+	color: #F9F9F9;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -266,7 +267,7 @@ main {
 .email-address {
 	font-size: 1.8rem;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #F9F9F9;
 }
 
 .email-address,
