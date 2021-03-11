@@ -20,8 +20,8 @@
 }
 
 .shield {
-	height: 300px;
-	width: 250px;
+	height: 30rem;
+	width: 25rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -29,17 +29,17 @@
 }
 
 .half-shield {
-	height: 90%;
-	width: 90%;
+	height: 85%;
+	width: 85%;
 	clip-path: polygon(50% 0, 100% 0, 90% 85%, 50% 100%);
 }
 
-h1 {
+/* h1 {
 	color: white;
 	font-size: 18rem;
 	position: absolute;
 	font-family: "GothamPro", sans-serif;
-}
+} */
 
 h2 {
 	color: #000000;
@@ -63,4 +63,20 @@ h2 {
 
 .css3-highlight {
 	background-color: #2965f1;
+}
+
+.number {
+	height: 21rem;
+	width: 17.5rem;
+	background-color: #FFFFFF;
+	z-index: 100;
+	position: absolute;
+}
+
+.five {
+	clip-path: polygon(0 0, 100% 0, 98% 15%, 19% 15%, 22% 35%, 95% 35%, 90% 85%, 50% 100%, 10% 85%, 7% 60%, 23% 60%, 25% 76%, 50% 85%, 78% 76%, 80% 48%, 6% 48%);
+}
+
+.three {
+	clip-path: polygon(0% 0%, 100% 0, 90% 88%, 50% 100%, 11% 88%, 6% 60%, 22% 60%, 26% 80%, 50% 86%, 75% 80%, 78% 50%, 26% 50%, 24% 36%, 80% 36%, 82% 15%, 3% 16%);
 }
