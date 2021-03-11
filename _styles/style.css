@@ -207,6 +207,7 @@ main {
 	border-radius: 25px;
 	transition: ease 250ms;
 	justify-content:center;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
 }
 
 .project-container:hover,
@@ -218,15 +219,15 @@ main {
 	height: auto;
 	max-width: 400px;
 	border-radius: 25px;
-	margin: 0 auto;
+	margin: auto;
 }
 
 .project-info {
 	width: 90%;
-	max-width: 400px;
+	max-width: 70ch;
 	padding-top: 2rem;
 	margin: 0 auto;
-	text-align: center;
+	text-align: justify;
 	font-size: 1.3rem;
 }
 
@@ -302,9 +303,12 @@ main {
 			". skills .";
 		row-gap: 1rem;
 	}
+	.nav-content {
+		width: 80%;
+	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {	
 	main {
 		height: 45rem;
 		padding-top: 25%;
@@ -312,10 +316,6 @@ main {
 	
 	.main-img {
 		height: 240.5px;
-	}
-	
-	.nav-content {
-		width: 80%;
 	}
 	
 	.icon {
@@ -343,13 +343,22 @@ main {
 		height: auto;
 		width: 300px;
 	}
-}
-
-@media only screen and (max-width: 400px) {
+	
 	nav {
 		font-size: .8rem;
 	}
 	
+	.nav-content {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.home-link {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
 	.project-img {
 		width: 200px;
 	}

@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Russo+One&display=swap');
+@font-face {
+	font-family: "GothamPro";
+	src: url("_styles/_fonts/GothamProNarrow-Bold.ttf") format("truetype"),
+		 url("_styles/_fonts/GothamProNarrow-Bold.woff") format("woff"),
+		 url("_styles/_fonts/GothamProNarrow-Bold.woff2") format("woff2");
+}
 
 .challenge-space {
 	border: 0.75rem solid #F52319;
@@ -31,8 +36,9 @@
 
 h1 {
 	color: white;
-	font-size: 17.5rem;
+	font-size: 18rem;
 	position: absolute;
+	font-family: "GothamPro", sans-serif;
 }
 
 h2 {
@@ -40,6 +46,7 @@ h2 {
 	font-size: 4.5rem;
 	position: relative;
 	top: .5rem;
+	font-family: "GothamPro", sans-serif;
 }
 
 .html5 {
