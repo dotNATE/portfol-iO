@@ -19,6 +19,7 @@
 
 html {
 	font-size: 16px;
+	scroll-behavior: smooth;
 }
 
 h2 {
@@ -330,6 +331,10 @@ main {
 }
 
 @media only screen and (max-width: 539px) {
+	main {
+		padding-top: 10rem;
+	}
+	
 	.contact-header,
 	.about-questions,
 	.questions-skills {
