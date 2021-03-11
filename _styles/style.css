@@ -207,7 +207,7 @@ main {
 	margin-top: 1rem;
 	border-radius: 25px;
 	transition: ease 250ms;
-	justify-content:center;
+	justify-content: center;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
 }
 
